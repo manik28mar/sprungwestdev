@@ -36,6 +36,10 @@
     padding: 3rem 1rem;
     background: linear-gradient(135deg, #6b1ba7, #3d0d6d);
     color: #fff;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
   
   .hero h1 {
@@ -117,6 +121,50 @@
     font-size: 2rem;
     margin-bottom: 1rem;;
   }
+
+  
+  
+
+  
+  .subject-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 160px;
+    width: 180px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a03cff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 5px;
+
+  }
+  
+  .subject-container:hover .subject-overlay {
+    opacity: 1;
+  }
+
+  .subject-container{
+    position: relative;
+  }
+  
+  .flip-text {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   
   .subjects {
     background-color: #3d0d6d;
@@ -129,11 +177,6 @@
     margin-bottom: 1rem;
   }
 
-  .subjects > p{
-    margin-bottom: 1rem;
-    line-height: 1.5rem;
-  }
-  
   .subject-list {
     display: flex;
     grid-template-columns: 1fr;
@@ -147,20 +190,20 @@
     border-radius: 8px;
     text-align: center;
     height: 160px;
-    width: 200px;
+    width: 180px;
     color: #000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 5px;
+    display: block;
   }
 
   .subject-box h6{
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
   }
 
-  .subject-box p{
-    font-size: 1rem;
-  }
+
   
   .testimonials {
     text-align: center;
@@ -173,6 +216,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 900px;
 }
 
 .testimonial-section h2 {
@@ -180,12 +224,6 @@
   margin-bottom: 20px;
 }
 
-.testimonial-carousel {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
 
 .testimonial-card {
   min-width: 100%;
@@ -193,7 +231,7 @@
   background-color: #f4ebff;
   border-radius: 12px;
   transition: transform 0.5s ease-in-out;
-  height: 450px;
+  height: 750px;
 }
 
 .testimonial-card.active {
@@ -218,6 +256,67 @@
   color: #555;
   line-height: 1.5;
   padding: 0.5rem;
+}
+
+#contact-us-form{
+  padding: 1rem;
+}
+
+#contact-us-form h1{
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  margin: 1rem 0;
+}
+
+#contact-us-form h6{
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  margin: 0.5rem 0;
+}
+
+#contact-us-form {
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.1rem;
+}
+
+#contact-us-form ul{
+  margin: 1rem;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 2rem;
 }
 
 /* Navigation Buttons */

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sprungwest Tutoring</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./flickity.css" class="css">
 </head>
 <body>
   <!-- Header -->
@@ -68,33 +69,146 @@
     <p>At Sprungwest Tutoring, we provide specialized and personalized courses to help students excel in Math and Physics. Our offerings include:</p>
 
     <div class="subject-list">
-      <div class="subject-box"><h6>Math (Grade 10-12)</h6><p>Pre-Calculus, Calculus<p></p></div>
-      <div class="subject-box"><h6>AP Physics 1-2</h6><p>College-Level Physics</p></div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math (Grade 7-9)</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Building a strong foundation in mathematics
+            for younger learners.</div>
+        </div>
+      </div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 10C</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">A comprehensive course designed for high school
+            students.</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="subject-list">
-      <div class="subject-box"><h6>Math (Grade 10-12)</h6><p>Pre-Calculus, Calculus<p></p></div>
-      <div class="subject-box"><h6>AP Physics 1-2</h6><p>College-Level Physics</p></div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 20-1/20-2</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Advanced math courses tailored to student
+            pathways.</div>
+        </div>
+      </div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 20 AP/IB</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Focused support for Advanced Placement (AP)
+            and International Baccalaureate (IB) students.</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="subject-list">
-      <div class="subject-box"><h6>Math (Grade 10-12)</h6><p>Pre-Calculus, Calculus<p></p></div>
-      <div class="subject-box"><h6>AP Physics 1-2</h6><p>College-Level Physics</p></div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 30-1/30-2</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Preparing students for higher education and
+            practical applications.</div>
+        </div>
+      </div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 30 AP/IB</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">In-depth guidance for AP/IB curriculum mastery.</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="subject-list">
-      <div class="subject-box"><h6>Math (Grade 10-12)</h6><p>Pre-Calculus, Calculus<p></p></div>
-      <div class="subject-box"><h6>AP Physics 1-2</h6><p>College-Level Physics</p></div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math 31 (Calculus)</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Unlocking the fundamentals of calculus with
+            clarity and ease.</div>
+        </div>
+      </div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Physics 20</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Introduction to core physics principles and
+            applications.</div>
+        </div>
+      </div>
+
     </div>
+
+    <div class="subject-list">
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Physics 30</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Advanced physics concepts for college preparation.</div>
+        </div>
+      </div>
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math or Physics Diploma Review</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Focused review sessions to
+            ace diploma exams with confidence.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="subject-list">
+
+      <div class="subject-container">
+        <div class="subject-box">
+          <h6>Math Contest Preparation</h6>
+        </div>
+        <div class="subject-overlay">
+          <div class="flip-text">Expert coaching for prestigious
+            math competitions such as Gauss, Pascal, Cayley, and Fermat
+            from the University of Waterloo.</div>
+        </div>
+      </div>
+
+    </div>
+
   </section>
 
   <!-- Testimonials -->
   <section class="testimonial-section">
     <h2>What Students and Parents Say</h2>
-    <div class="testimonial-carousel">
-        <button class="nav-button left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="testimonial-carousel main-carousel">
         
-        <div class="testimonial-card" id="testimonial-1">
+        <div class="testimonial-card carousel-cell" id="testimonial-1">
             <img src="https://i.pinimg.com/236x/c5/7a/ce/c57ace907ef30d0094c9757e1698ab29.jpg" alt="Andrew Wang" class="testimonial-avatar">
             <h3 class="testimonial-name">Andrew Wang</h3>
             <p class="testimonial-text">
@@ -104,16 +218,65 @@
             </p>
         </div>
 
-        <div class="testimonial-card" id="testimonial-2">
-            <img src="avatar.png" alt="Random Name" class="testimonial-avatar">
-            <h3 class="testimonial-name">Random Name</h3>
-            <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
-            </p>
-        </div>
+        <div class="testimonial-card carousel-cell" id="testimonial-1">
+          <img src="https://i.pinimg.com/236x/c5/7a/ce/c57ace907ef30d0094c9757e1698ab29.jpg" alt="Andrew Wang" class="testimonial-avatar">
+          <h3 class="testimonial-name">Parker B (Physics 30 Student)</h3>
+          <p class="testimonial-text">
+            As a physics 30 student I had little love for physics. All it was to  me was formulas and complicated theory that made no sense. I had a very tough time understanding the theory side of physics which is absolutely crucial to doing well. He really made me understand why the formulas are used and the theory behind them all. Furthermore, he went above and beyond and put his passion into really making sure I knew the basics right up to the extra curricular content.
+            His love for physics really rubs off and now I see physics in a whole new way. He is very fair when it comes to pricing, and very flexible to adjust the best he can to your schedule. Without Manish my mark would be no where near where it is.
+          </p>
+      </div>
 
-        <button class="nav-button right" onclick="moveSlide(1)">&#10095;</button>
+      <div class="testimonial-card carousel-cell" id="testimonial-1">
+        <img src="https://i.pinimg.com/236x/c5/7a/ce/c57ace907ef30d0094c9757e1698ab29.jpg" alt="Andrew Wang" class="testimonial-avatar">
+        <h3 class="testimonial-name">M Q Zaman/ Parent of Math 20/30 IB Student</h3>
+        <p class="testimonial-text">My daughter was struggling with math when she got in to IB programme. Manish addressed her areas of weaknesses, significantly increased her understanding of the subject and encouraged her to work harder. We all owe a lot to Manish for her final marks in nineties.
+          What I really like is that Manish teaches the basics, helps to create a solid foundation that one can build on and then good marks in the exam automatically follows. Thanks Manish!</p>
     </div>
+
+    <div class="testimonial-card carousel-cell" id="testimonial-1">
+      <img src="https://i.pinimg.com/236x/c5/7a/ce/c57ace907ef30d0094c9757e1698ab29.jpg" alt="Andrew Wang" class="testimonial-avatar">
+      <h3 class="testimonial-name">Will - Calculus/Math 31 Student</h3>
+      <p class="testimonial-text">Manish is more than a tutor he is an experienced educator who's deepest passion is providing a thorough understanding of the topics being presented. Never did I leave a session with him having only answers in my books, I had complete comprehension of the subject and the ability to see real world applications of advanced mathematics. Manish's love for math and science shines through in his lessons and keeps you interested and involved even when the subject matter seemed boring or daunting before.</p>
+  </div>
+
+    </div>
+</section>
+
+<section id="contact-us-form">
+  <h1>Contact Us</h1>
+  <br>
+  <h6>Let’s Get Started</h6>
+  <p>Ready to unlock your potential? Book a free consultation today and let's embark on a journey of learning and discovery together!</p>
+  <ul>
+    <li>📧 Email: demo@demo.com</li>
+    <li>📞 Phone: 9999999999</li>
+    <li>🌐 Follow us on Social Media:</li>
+  </ul>
+  <p>Or fill out the form below, and we’ll get back to you soon.</p>
+  <div class="form-container">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
 </section>
 
   <!-- Footer -->
@@ -132,5 +295,9 @@
       <a href="#">🟠</a>
     </div>
   </footer>
+
+  <script src="./jquery.js"></script>
+  <script src="./flickity.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
