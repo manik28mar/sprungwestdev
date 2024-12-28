@@ -9,6 +9,11 @@
 
 $('.main-carousel').flickity({
     // options
-    cellAlign: 'left',
-    contain: true
+    cellAlign: 'center',
+    contain: true,
+    autoPlay: 5000,
+    freeScroll: true,
+    wrapAround: true,
+    fade: true,
+    draggable: true,
   });
