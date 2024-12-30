@@ -17,23 +17,116 @@ body {
   display: none !important;
 }
 
-header {
+header.mobile{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background: linear-gradient(135deg, #3d0d6d, #6b1ba7);
-  color: #fff;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          background: linear-gradient(135deg, #3d0d6d, #6b1ba7);
+          color: #fff;
+width: 100%;
 }
 
-.logo {
+#mobile-nav-bar{
+  height: fit-content !important;
+  position: fixed;
+width: 100vw;
+top: 0;
+}
+
+header.mobile .logo {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.menu-icon {
+header.mobile .menu-icon{
   font-size: 1.5rem;
+        cursor: pointer;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #3d0d6d, #6b1ba7);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  z-index: 2147483647;
+}
+
+.overlay-content {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.overlay-content a {
+  margin-top: 15px;
+  padding: 8px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  text-align: center;
+  color: #FFFFFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.overlay .closebtn div{
+  font-size: 3rem;
+
+}
+
+#nav-bar-icon{
+  height: 50px;
+  width: 50px;
   cursor: pointer;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  transition: top 0.3s;
+  border: 2px solid #FFFFFF;
+  border-radius: 3px;
+}
+
+
+
+#mobile-nav-logo{
+  position: fixed;
+  top: 0;
+  left: 5vw;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+  width: 100px;
+  height: 86px;
+  z-index: 1;
+  padding-left: 10px;
+  transition: top 0.3s;
+
+}
+
+#mobile-nav-logo img{
+  width: 85px;
+  height: 86px;
 }
 
 .hero {
@@ -368,6 +461,11 @@ footer nav a {
   color: #fff;
   margin: 0 0.5rem;
   font-size: 1.5rem;
+}
+
+.social-icons img{
+  height: 46px;
+  width: 46px;
 }
 }
 

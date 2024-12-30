@@ -9,12 +9,31 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="mobile">
-    <div class="logo">Logo</div>
-    <nav>
-      <div class="menu-icon">☰</div>
-    </nav>
-  </header>
+  <section id="mobile-nav-bar" class="mobile">
+    <div id="nav-bar" class="overlay">
+
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><div>&times;</div></a>
+
+        <div class="overlay-content">
+          <a href="#" onclick="closeNav()">Home</a>
+          <a href="#about-section" onclick="closeNav()">About Us</a>
+          <a href="#subject-naviagtion-section" onclick="closeNav()">Subjects</a>
+          <a href="#testimonial-section" onclick="closeNav()">Testimonials</a>
+          <a href="#contact-us-form" onclick="closeNav()">Contact Us</a>
+        </div>
+      </div>
+
+      
+      <header class="mobile">
+        <a href="#"><div id="mobile-nav-logo"><img src="./images/logo.png" alt="logo"></div></a>
+        <nav>
+          <div class="menu-icon" onclick="openNav()">☰</div>
+        </nav>
+      </header>
+
+
+    </section>
+
 
   <nav id="desktop-nav-bar" class="desktop">
     <div class="nav-wrapper">
