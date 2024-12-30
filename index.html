@@ -61,8 +61,8 @@
     <div class="hero-container">
     <h1>Welcome to Sprungwest Tutoring</h1>
     <p>Where No Question is Dumb, Except the One You Don’t Ask</p>
-    <button class="cta-button">Book a Session Now</button>
-    <button class="secondary-button">Learn More</button></div>
+    <a class="cta-button" href="#form-container">Book a Session Now</a>
+    <a class="secondary-button" href="#subject-naviagtion-section">Learn More</a></div>
   </section>
 
   <!-- About Section -->
@@ -560,28 +560,15 @@
     <li>🌐 Follow us on Social Media:</li>
   </ul>
   <p>Or fill out the form below, and we’ll get back to you soon.</p>
-  <div class="form-container">
-    <form action="action_page.php">
+  <div class="form-container" id="form-container">
   
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
+      <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "48717882",
+          formId: "ad818c50-0ad2-4cff-a033-2a6096a70aa1"
+        });
+      </script>
   </div>
 </div>
 </section>

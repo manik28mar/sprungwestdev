@@ -166,6 +166,7 @@ section.hero{
   color: #fff;
   cursor: pointer;
   width: 250px;
+  text-decoration: none;
 }
 
 .cta-button {
@@ -417,6 +418,15 @@ padding: 20px;
 margin-top: 2rem;
 }
 
+.actions input{
+  border: 1px solid #FFFFFF !important;
+  background-color: #3d0d6d !important;
+}
+
+[data-application-name="embedded-viral-link-ui"]{
+  display: none !important;
+}
+
 /* Navigation Buttons */
 .nav-button {
 position: absolute;
@@ -466,6 +476,10 @@ footer nav a {
 .social-icons img{
   height: 46px;
   width: 46px;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 }
 
@@ -632,6 +646,7 @@ section.hero{
   color: #fff;
   cursor: pointer;
   width: 250px;
+  text-decoration: none;
 }
 
 .cta-button {
