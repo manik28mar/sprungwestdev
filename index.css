@@ -132,13 +132,18 @@ height: 64px;
 
 .hero {
   text-align: center;
-  padding: 3rem 1rem;
   background: linear-gradient(135deg, #6b1ba7, #3d0d6d);
   color: #fff;
-  background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+
+}
+.hero-container{
+  padding: 3rem 1rem;
+  height: 100%;
+  width: 100%;
+  background-image: url('./images/students.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -155,7 +160,7 @@ section{
 }
 
 section.hero{
-  padding-top: 30vh;;
+  padding-top: 25vh;;
 }
 
 .cta-button, .secondary-button {
@@ -204,7 +209,7 @@ section.hero{
   height: fit-content !important;
   padding: 12rem 2rem;
   line-height: 1.5rem;
-  padding-bottom: 14rem;
+  padding-bottom: 17rem;
   background-image: url('./images/math-bg.png');
   background-size:cover;
   background-position: center;
@@ -231,6 +236,10 @@ section.hero{
 #about-section{
   height: fit-content !important;
   background-color: #F1F1F1;
+  background-image: url('./images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #about-section p, #about-section ul{
@@ -252,15 +261,17 @@ section.hero{
 
 .special-needs {
   padding: 4rem 2rem;
-background-image: url('./images/colors.png');
+background-image: url('./images/mobile-children.png');
 background-size: cover;
-background-position: left;
+background-position: top;
 background-repeat: no-repeat;
+border-top: 1px solid #FFFFFF;
 }
 
 .special-needs-container {
   margin: 0 auto;
   padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .special-needs h1 {
@@ -665,7 +676,6 @@ color: #ffffff;
 
 .hero {
   text-align: center;
-  padding: 3rem 1rem;
   background: linear-gradient(135deg, #6b1ba7, #3d0d6d);
   color: #fff;
   background-attachment: fixed;
@@ -675,13 +685,18 @@ background-size: cover;
 }
 
 .hero-container{
+  padding: 3rem 1rem;
   height: 100%;
   width: 100%;
+  background-image: url('./images/students.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .hero p {
@@ -689,11 +704,11 @@ background-size: cover;
 }
 section{
   height: 100vh;
-  min-height: fit-content;
+  min-height: 800px;
 }
 
 section.hero{
-  padding-top: 30vh;;
+  padding-top: 25vh;;
 }
 
 .cta-button, .secondary-button {
@@ -771,6 +786,7 @@ section.hero{
 #about-section{
   height: fit-content !important;
   background-color: #F1F1F1;
+  background-image: url('./images/bg.png');
   margin: 0;
   width: 100% !important;
   max-width: unset !important;
@@ -808,17 +824,18 @@ section.hero{
 
 .special-needs {
   padding: 4rem 2rem;
-background-image: url('./images/colors.png');
+background-image: url('./images/children-bg.png');
 background-size: cover;
-background-position: top;
+background-position: center;
 background-repeat: no-repeat;
 }
 
 .special-needs-container {
   max-width: 1200px;
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   padding-top: 5rem;
+  padding-bottom: 12rem;
 }
 
 .special-needs h1 {
