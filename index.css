@@ -386,6 +386,7 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 min-height: 900px;
+height: fit-content !important;
 }
 
 .testimonial-section h2 {
@@ -427,6 +428,18 @@ font-size: 1rem;
 color: #555;
 line-height: 1.5;
 padding: 0.5rem;
+}
+
+.google-reviews-link{
+  display: block;
+  margin: 2rem auto;
+  margin-top: 4rem;
+  width: 240px;
+  height: 80px;
+}
+.google-reviews-link img{
+  width: 100%;
+  height: 100%;
 }
 
 #contact-us-form{
@@ -1045,6 +1058,7 @@ padding: 20px;
 border-radius: 8px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 min-height: 900px;
+height: fit-content !important;
 }
 
 .testimonial-carousel{
@@ -1099,6 +1113,18 @@ font-size: 1rem;
 color: #555;
 line-height: 1.5;
 padding: 0.5rem;
+}
+
+.google-reviews-link{
+  display: block;
+  margin: 2rem auto;
+  margin-top: 4rem;
+  width: 240px;
+  height: 80px;
+}
+.google-reviews-link img{
+  width: 100%;
+  height: 100%;
 }
 
 #contact-us-form{
